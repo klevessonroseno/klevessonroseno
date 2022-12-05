@@ -19,7 +19,8 @@ a {
 
 header {
   width: 100%;
-  padding: 25px calc((100% - 1290px) / 2);
+  margin: 0 auto;
+  padding: 35px;
 
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +45,6 @@ header h1 {
 header nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 header nav li {
@@ -71,7 +71,7 @@ header nav li a:focus {
   border-color: #34373c;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 722px) {
   header {
     flex-direction: column;
   }
@@ -83,4 +83,26 @@ header nav li a:focus {
   header nav li {
     margin-bottom: 7px;
   }
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.apresentacao h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #34373c;
+  margin-bottom: 35px;
+}
+
+p {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #34373c;
 }
