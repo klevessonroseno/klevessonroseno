@@ -29,6 +29,7 @@ header {
 
 /* LOGO */
 header h1 {
+  display: block;
   font-size: 1rem;
   font-weight: 700;
   color: #34373c;
@@ -44,7 +45,6 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 header nav li {
@@ -56,6 +56,7 @@ header nav li:last-child {
 }
 
 header nav li a {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -77,5 +78,9 @@ header nav li a:focus {
 
   header h1 {
     margin-bottom: 35px;
+  }
+
+  header nav li {
+    margin-bottom: 7px;
   }
 }
