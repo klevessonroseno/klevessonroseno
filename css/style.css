@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 li {
@@ -12,6 +13,7 @@ li {
 a {
   text-decoration: none;
 }
+
 
 /* HEADER */
 
@@ -27,7 +29,6 @@ header {
 
 /* LOGO */
 header h1 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #34373c;
@@ -35,7 +36,6 @@ header h1 {
   border: 2.5px solid #34373c;
   padding: 8px;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 /* MENU DESKTOP */
@@ -43,11 +43,12 @@ header h1 {
 header nav {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header nav li {
   margin-right: 30px;
-  padding: 5px;
 }
 
 header nav li:last-child {
@@ -61,4 +62,20 @@ header nav li a {
   color: #34373c;
   text-transform: uppercase;
   padding: 8px;
+  border: 2.5px solid transparent;
+}
+
+header nav li a:hover,
+header nav li a:focus {
+  border-color: #34373c;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-bottom: 35px;
+  }
 }
