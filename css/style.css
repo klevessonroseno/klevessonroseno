@@ -19,6 +19,7 @@ a {
 
 header {
   width: 100%;
+  max-width: 1290px;
   margin: 0 auto;
   padding: 35px;
 
@@ -100,7 +101,7 @@ header nav li a:focus {
   margin-bottom: 35px;
 }
 
-p {
+.apresentacao p {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-style: italic;
   font-size: 24px;
