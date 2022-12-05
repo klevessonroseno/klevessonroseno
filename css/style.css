@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding: 25px calc((100% - 1290px) / 2);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #34373c;
+  text-transform: uppercase;
+  border: 2.5px solid #34373c;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* MENU DESKTOP */
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav li {
+  margin-right: 30px;
+  padding: 5px;
+}
+
+header nav li:last-child {
+  margin-right: 0px;
+}
+
+header nav li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #34373c;
+  text-transform: uppercase;
+  padding: 8px;
+}
