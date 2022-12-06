@@ -1,9 +1,10 @@
+/* CSS RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font-family: 'Raleway', sans-serif;
 }
 
 li {
@@ -14,96 +15,97 @@ a {
   text-decoration: none;
 }
 
+/* DECLARAÇÃO DE VARIÁVEIS */
+
+/* 8, 13, 21, 34, 55 */
+::root {
+  --font-size-1: 0.5rem;
+  --font-size-2: 0.813rem;
+  --font-size-3: 1.313rem;
+  --font-size-4: 2.125rem;
+  --font-size-5: 3.438rem;
+}
+
+/*
+
+font-family: 'Raleway', sans-serif;
+color: #34373c;
+
+font-family: 'Libre Baskerville', Georgia, serif;
+color: #396783;
+
+*/
 
 /* HEADER */
 
 header {
-  width: 100%;
   max-width: 1290px;
   margin: 0 auto;
-  padding: 35px;
+  padding: 20px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
 }
 
 /* LOGO */
-header h1 {
+.logo h1 {
   display: block;
-  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.813rem;
   font-weight: 700;
   color: #34373c;
   text-transform: uppercase;
-  border: 2.5px solid #34373c;
-  padding: 8px;
+  border: 2px solid #34373c;
+  padding: 6.5px;
   cursor: pointer;
 }
 
 /* MENU DESKTOP */
 
-header nav {
+.menu {
   display: flex;
   flex-wrap: wrap;
 }
 
-header nav li {
-  margin-right: 30px;
-}
-
-header nav li:last-child {
-  margin-right: 0px;
-}
-
-header nav li a {
+.menu a {
   display: block;
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
+  font-size: 0.813rem;
   font-weight: 700;
   color: #34373c;
   text-transform: uppercase;
-  padding: 8px;
-  border: 2.5px solid transparent;
+  padding: 6.5px;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
-header nav li a:hover,
-header nav li a:focus {
+.menu a:hover,
+.menu a:focus {
   border-color: #34373c;
-}
-
-@media (max-width: 722px) {
-  header {
-    flex-direction: column;
-  }
-
-  header h1 {
-    margin-bottom: 35px;
-  }
-
-  header nav li {
-    margin-bottom: 7px;
-  }
 }
 
 /* APRESENTAÇÃO */
 
 .apresentacao {
-  width: 60%;
+  max-width: 774px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding: 20px;
 }
 
 .apresentacao h2 {
-  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.125rem;
   font-weight: 700;
   color: #34373c;
-  margin-bottom: 35px;
+  text-transform: uppercase;
 }
 
 .apresentacao p {
-  font-family: 'Libre Baskerville', Georgia, serif;
   font-style: italic;
-  font-size: 24px;
+  font-size: 1.313rem;
   color: #34373c;
 }
