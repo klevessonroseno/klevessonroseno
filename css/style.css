@@ -45,9 +45,8 @@ img {
 }
 
 .menu {
-  max-width: 1060px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 10px 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -55,9 +54,8 @@ img {
   align-items: center;
 }
 
-.menu-logo {
+.menu-logo a {
   display: block;
-  padding: 5px;
 }
 
 .menu-logo h1 {
@@ -79,15 +77,6 @@ img {
 
 .menu-nav li {
   margin-right: 20px;
-  padding: 5px;
-}
-
-.menu-nav li a {
-  border-bottom: 1px solid transparent;
-}
-
-.menu-nav li a:hover {
-  border-bottom: 1px solid #ff3a5e;
 }
 
 .menu-nav li:last-child {
@@ -96,6 +85,11 @@ img {
 
 .menu-nav li a {
   display: block;
+  border-bottom: 1px solid transparent;
+}
+
+.menu-nav li a:hover {
+  border-bottom: 1px solid #ff3a5e;
 }
 
 /* BANNER */
@@ -104,29 +98,28 @@ img {
   background-color: #040405;
 }
 
-.banner-info {
-  max-width: 1060px;
+.banner-info-text {
+  max-width: 512px;
   margin: 0 auto;
   padding: 50px 0;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-}
-
-.banner-info-text {
-  padding: 10px;
 }
 
 .banner-info-text h2 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.4;
-
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .banner-info-text h2 span {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.4;
@@ -134,6 +127,7 @@ img {
 }
 
 .banner-info-text p {
+  text-align: center;
   font-size: 1.25rem;
   line-height: 1.4;
   padding-bottom: 40px;
@@ -160,7 +154,7 @@ img {
 }
 
 .quem-sou-eu {
-  max-width: 560px;
+  max-width: 512px;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -185,7 +179,7 @@ img {
 .experiencia-container {
   margin: 0 auto;
   padding: 50px 0;
-  max-width: 1060px;
+  max-width: 1024px;
 }
 
 #experiencia {
@@ -264,7 +258,7 @@ img {
   flex-wrap: nowrap;
   align-items: center;
 
-  max-width: 1060px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -337,7 +331,7 @@ img {
   flex-wrap: nowrap;
   align-items: center;
 
-  max-width: 1060px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
 }
