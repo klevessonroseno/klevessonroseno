@@ -1,10 +1,23 @@
 /* CSS RESET */
 
 * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   font-size: 100%;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  color: #d8d8d8;
+  font-style: normal;
+  line-height: 1.77;
+}
+
+body {
+  font-size: 1.125rem
 }
 
 li {
@@ -15,97 +28,351 @@ a {
   text-decoration: none;
 }
 
-/* DECLARAÇÃO DE VARIÁVEIS */
-
-/* 8, 13, 21, 34, 55 */
-::root {
-  --font-size-1: 0.5rem;
-  --font-size-2: 0.813rem;
-  --font-size-3: 1.313rem;
-  --font-size-4: 2.125rem;
-  --font-size-5: 3.438rem;
+a:hover {
+  color: white;
 }
 
-/*
+img {
+  display: block;
+  max-width: 100%;
+}
 
-font-family: 'Raleway', sans-serif;
-color: #34373c;
+/* CABEÇALHO */
 
-font-family: 'Libre Baskerville', Georgia, serif;
-color: #396783;
+.menu-bg {
+  background-color: #040405;
+  border-bottom: 1px solid #101013;
+}
 
-*/
-
-/* HEADER */
-
-header {
-  max-width: 1290px;
+.menu {
+  max-width: 1060px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 0;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 
-/* LOGO */
-.logo h1 {
+.menu-logo {
   display: block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.813rem;
-  font-weight: 700;
-  color: #34373c;
-  text-transform: uppercase;
-  border: 2px solid #34373c;
-  padding: 6.5px;
-  cursor: pointer;
+  padding: 5px;
 }
 
-/* MENU DESKTOP */
+.menu-logo h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #d8d8d8;
+}
 
-.menu {
+.menu-logo span {
+  font-size: 40px;
+  font-weight: 500;
+  color: #ff3a5e;
+}
+
+.menu-nav ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.menu a {
+.menu-nav li {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.menu-nav li a {
+  border-bottom: 1px solid transparent;
+}
+
+.menu-nav li a:hover {
+  border-bottom: 1px solid #ff3a5e;
+}
+
+.menu-nav li:last-child {
+  margin-right: 0px;
+}
+
+.menu-nav li a {
   display: block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.813rem;
-  font-weight: 700;
-  color: #34373c;
-  text-transform: uppercase;
-  padding: 6.5px;
-  cursor: pointer;
-  border: 2px solid transparent;
 }
 
-.menu a:hover,
-.menu a:focus {
-  border-color: #34373c;
+/* BANNER */
+
+.banner-info-bg {
+  background-color: #040405;
 }
 
-/* APRESENTAÇÃO */
-
-.apresentacao {
-  max-width: 774px;
+.banner-info {
+  max-width: 1060px;
   margin: 0 auto;
+  padding: 50px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-info-text {
+  padding: 10px;
+}
+
+.banner-info-text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin-bottom: 30px;
+}
+
+.banner-info-text h2 span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ff3a5e;
+}
+
+.banner-info-text p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  padding-bottom: 40px;
+}
+
+.banner-info-text a {
+  display: block;
+  padding: 15px 80px;
+  background-color: #ff3a5e;
+  color: #d8d8d8;
+  max-width: max-content;
+  font-weight: 500;
+}
+
+.banner-info-img {
+  padding: 10px;
+  flex: 1 0 400px
+}
+
+/*  QUEM SOU EU */
+
+.quem-sou-eu-bg {
+  background-color: #09090B;
+}
+
+.quem-sou-eu {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.quem-sou-eu h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.quem-sou-eu p {
+  text-align: center;
+}
+
+/* EXPERIÊNCIA */
+
+.experiencia-bg {
+  background-color: #040405;
+}
+
+.experiencia-container {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1060px;
+}
+
+#experiencia {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.experiencia {
+  display: flex;
+  align-items: baseline;
+}
+
+.experiencia-nome-empresa {
+  flex: 0 0 20%;
+
+  background-color: #101013;
+  margin-right: 20px;
+
+}
+
+.experiencia-nome-empresa li {
+  border-left: 4px solid transparent;
   padding: 20px;
 }
 
-.apresentacao h2 {
-  padding-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.125rem;
-  font-weight: 700;
-  color: #34373c;
-  text-transform: uppercase;
+.experiencia-nome-empresa li a {
+  margin-left: 10px;
 }
 
-.apresentacao p {
-  font-style: italic;
-  font-size: 1.313rem;
-  color: #34373c;
+.experiencia-nome-empresa li:first-child {
+  border-left: 4px solid #ff3a5e;
+}
+
+.experiencia-nome-empresa li a:focus,
+.experiencia-nome-empresa li a:hover {
+  color: #ff3a5e;
+}
+
+.experiencia-nome-empresa li:last-child {
+  margin-bottom: 0px;
+}
+
+.experiencia-detalhes {
+  flex: 1 1 80%
+}
+
+.experiencia-detalhes h3 {
+  color: #ff3a5e;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.experiencia-detalhes-cabecalho {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.experiencia-detalhes-cabecalho h2 {
+  font-size: 1.5rem;
+}
+
+/* PROJETOS */
+
+.projetos-bg {
+  background-color: #09090B;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#projetos {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projetos div {
+  background-color: #040405;
+  padding: 40px 20px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  flex: 1 0 260px;
+  margin-bottom: 30px;
+}
+
+.projetos div:hover {
+  border: 1px solid #ff3a5e;
+  transition: 0.6s;
+}
+
+.projetos div h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.projetos div p {
+  margin-bottom: 20px;
+}
+
+.projetos-container a {
+  color: #ff3a5e;
+  border-bottom: 1px solid transparent;
+}
+
+.projetos-container a:hover,
+.projetos-container a:focus {
+  border-bottom: 1px solid #ff3a5e;
+}
+
+.projetos div a {
+  color: #ff3a5e;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.projetos div a:hover,
+.projetos div a:focus {
+  border-bottom: 1px solid #ff3a5e;
+}
+
+/* SERVIÇOS */
+
+.servicos-bg {
+  background-color: #040405;
+}
+
+.servicos-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#servicos {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.servicos div {
+  padding: 40px 20px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  flex: 1 0 260px;
+  margin-bottom: 30px;
+  background-color: #09090B;
+}
+
+.servicos div:hover {
+  border: 1px solid #ff3a5e;
+  transition: 0.6s;
+}
+
+.servicos div h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.servicos div p {
+  margin-bottom: 20px;
 }
